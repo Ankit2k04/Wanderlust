@@ -112,3 +112,87 @@ body{
     height: 400px;
     width: 80vh;
 }
+
+/* 🌱 Mobile view (phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+  /* Navbar fix: brand + links neatly stacked */
+  .navbar {
+    height: auto; /* remove fixed height */
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;  /* keep links aligned left */
+  }
+
+  .nav-link {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    font-size: 1rem;
+  }
+
+  /* Fix collapse text overlap: ensure toggle works */
+  .navbar-collapse {
+    background-color: white; /* optional: white bg behind collapsed links */
+    padding: 0.5rem 1rem;
+  }
+
+  /* Map responsive */
+  #map {
+    width: 100% !important;
+    height: 40vh !important; /* adjust height on mobile */
+  }
+
+  /* Footer info stacked properly */
+  .f-info {
+    height: auto;
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+
+  .f-info-links, .f-info-socials, .f-info-brand {
+    margin-bottom: 0.5rem;
+  }
+
+  /* Cards full width */
+  .listing-card {
+    margin-bottom: 1rem;
+  }
+
+  .card-img-top {
+    height: auto;
+  }
+
+  /* Show page image smaller */
+  .show-img {
+    height: 25vh;
+  }
+
+  /* Buttons bigger for tap */
+  .add-btn, .edit-btn {
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+  }
+
+  /* Text scaling */
+  .card-text p, .listing-link {
+    font-size: 0.9rem;
+  }
+
+  /* Reduce margins/paddings for mobile spacing */
+  body {
+    padding: 0.5rem;
+  }
+
+  .container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
